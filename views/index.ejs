@@ -1,0 +1,35 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Art Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Art Gallery</h1>
+        <form action="/search" method="GET">
+            <input type="text" name="q" placeholder="Search for artworks" required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="artwork-info">
+            <% if (artworks && artworks.length > 0) { %>
+                <% artworks.forEach(artwork => { %>
+                    <div class="artwork">
+                        <h2><%= artwork.title %></h2>
+                        <p>Artist: <%= artwork.artistDisplayName || 'Unknown' %></p>
+                        <img src="<%= artwork.primaryImageSmall || 'https://via.placeholder.com/150' %>" alt="<%= artwork.title %>">
+                        <p><%= artwork.medium || 'Medium not available' %></p>
+                    </div>
+                <% }) %>
+            <% } else if (error) { %>
+                <p><%= error %></p>
+            <% } else { %>
+                <p>No artworks to display.</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

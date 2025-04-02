@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
+    background-color: #706D54; /* Slightly lighter background */
+    color: #333;
+    line-height: 1.7; /* Improved line spacing for readability */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto; /* More spacing around the container */
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#A08963;
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem; /* Spacing between input and button */
+}
+
+form input[type="text"] {
+    padding: 1.2rem;
+    width: 400px; /* Wider input */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* More rounded corners */
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle shadow on focus */
+}
+
+form button {
+    padding: 1.2rem 2rem; /* Larger button */
+    border: none;
+    border-radius: 8px;
+    background-color: #C9B194;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+form button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.artwork-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min width */
+    gap: 2rem;
+}
+
+.artwork {
+    background: white;
+    border: 1px solid #eee; /* Lighter border */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* More subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.artwork h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.artwork p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.error {
+    color: #e74c3c; /* Red error color */
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}
