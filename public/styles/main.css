@@ -6,15 +6,15 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
-    background-color: #706D54; /* Slightly lighter background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #706D54;  
     color: #333;
-    line-height: 1.7; /* Improved line spacing for readability */
+    line-height: 1.7; 
 }
 
 .container {
     max-width: 1200px;
-    margin: 2rem auto; /* More spacing around the container */
+    margin: 2rem auto; 
     padding: 2rem;
 }
 
@@ -22,34 +22,34 @@ h1 {
     text-align: center;
     margin-bottom: 2rem;
     color:#A08963;
-    font-size: 2.5rem; /* Larger heading */
-    font-weight: 600; /* Semi-bold for emphasis */
+    font-size: 2.5rem;
+    font-weight: 600; 
 }
 
 form {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    gap: 1rem; /* Spacing between input and button */
+    gap: 1rem; 
 }
 
 form input[type="text"] {
     padding: 1.2rem;
-    width: 400px; /* Wider input */
+    width: 400px; 
     border: 1px solid #ddd;
-    border-radius: 8px; /* More rounded corners */
+    border-radius: 8px; 
     font-size: 1rem;
-    transition: border-color 0.3s ease; /* Smooth transition for focus */
+    transition: border-color 0.3s ease;
 }
 
 form input[type="text"]:focus {
     outline: none;
     border-color: #3498db;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle shadow on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
 }
 
 form button {
-    padding: 1.2rem 2rem; /* Larger button */
+    padding: 1.2rem 2rem;
     border: none;
     border-radius: 8px;
     background-color: #C9B194;
@@ -57,26 +57,26 @@ form button {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
     background-color: #2980b9;
-    transform: translateY(-2px); /* Slight lift on hover */
+    transform: translateY(-2px); 
 }
 
 .artwork-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min width */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
 }
 
 .artwork {
     background: white;
-    border: 1px solid #eee; /* Lighter border */
+    border: 1px solid #eee; 
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* More subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
